@@ -29,6 +29,10 @@ public class CurrencyConverter {
     }
 
     public double convertCurrency(String fromCurrency, String toCurrency, double amount, ExchangeRateResponse rates) {
+        if (amount < 0) {
+            throw new IllegalArgumentException("Valor para conversão não pode ser negativo");
+        }
+
         if (rates == null || rates.getConversion_rates() == null) {
             throw new IllegalArgumentException("Dado de câmbio para conversão inválido");
         }
