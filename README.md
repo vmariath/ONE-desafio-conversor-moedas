@@ -18,20 +18,16 @@ O Conversor de Moedas é uma aplicação Java baseada em console que converte va
 
 ## Como Usar
 1. **Clone o repositório** ou baixe os arquivos do projeto.
-2. **Compile o projeto**:
     ```sh
-    javac -d bin src/*.java
+    (https://github.com/vmariath/ONE-desafio-conversor-moedas.git)
     ```
-3. **Execute o programa**:
-    ```sh
-    java -cp bin src.Main
-    ```
+2. Abra o IntelliJ IDEA e selecione Open.
 
-## Estrutura do Projeto
+3. Navegue até o diretório do projeto clonado e clique em OK.
 
-- **src/Main.java**: Classe principal que contém o loop interativo para o usuário e gerencia a interação com o conversor de moedas.
-- **src/CurrencyConverter.java**: Classe que faz as requisições HTTP para a API ExchangeRate e realiza a conversão de moedas e trata os possiveis erros.
-- **src/ExchangeRateResponse.java**: Classe modelo para armazenar a resposta da API ExchangeRate.
+4. No painel lateral do Projeto, encontre a pasta src e encontre o arquivo Main, clique com o botão direito e selecione a opção run 'Main.main()'
+
+5. Siga as instruções do programa no console.
 
 ## Exemplo de Uso
 Ao executar o programa, você verá um menu com as seguintes opções:
@@ -46,4 +42,17 @@ Ao executar o programa, você verá um menu com as seguintes opções:
 4. Digite a moeda de saída (por exemplo, `BRL` para Real Brasileiro).
 5. Digite o valor a ser convertido.
 6. O programa exibirá o valor convertido.
+
+## Estrutura do Projeto
+
+- **src/Main.java**: Classe principal que contém o loop interativo para o usuário e gerencia a interação com o conversor de moedas.
+- **src/CurrencyConverter.java**: Classe que faz as requisições HTTP para a API ExchangeRate e realiza a conversão de moedas e trata os possiveis erros.
+- **src/ExchangeRateResponse.java**: Classe modelo para armazenar a resposta da API ExchangeRate.
+
+## Tecnologias utilizadas
+
+- Java
+- POO
+- Gson
+- API ExchangeRate
 
